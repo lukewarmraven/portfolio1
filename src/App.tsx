@@ -5,17 +5,19 @@ import Certificates from './pages/Certificates/Certificates'
 import Projects from './pages/Projects/Projects'
 import About from './pages/About/About'
 import Navbar from './components/Navbar/Navbar'
+import Resume from './pages/Resume/Resume'
 
 function App() {
 
   return (
     <div>
-      <div>App Page</div>
+      {/* <div>App Page</div> */}
 
       <Navbar/>
 
       <Routes>
         <Route path='/' element={<Home />}/>
+        <Route path='/resume' element={<Resume />}/>
         <Route path='/certificates' element={<Certificates />}/>
         <Route path='/projects' element={<Projects />}/>
         <Route path='/about' element={<About />}/>

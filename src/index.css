@@ -1,8 +1,18 @@
 :root{
     --font-cursive: "Damion";
-    --font-bold-display: "Fredoka"
+    --font-general: "Fredoka";
+    --weight-heavy: 800;
+
+    /* colors */
+    --main-red: #EC1D39;
+    --main-darkred: #C9184A;
+    --main-white: #FEE3E8;
+
 }
 
 html,body{
-    font-family: var(--font-cursive);
+    font-family: var(--font-general);
+    background-color: var(--main-red);
+    color: var(--main-red);
+    box-sizing: border-box;
 }

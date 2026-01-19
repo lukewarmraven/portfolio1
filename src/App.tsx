@@ -6,6 +6,7 @@ import Projects from './pages/Projects/Projects'
 import About from './pages/About/About'
 import Navbar from './components/Navbar/Navbar'
 import Resume from './pages/Resume/Resume'
+import CertificateView from './pages/Certificates/CertificateView/CertificateView'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
         <Route path='/' element={<Home />}/>
         <Route path='/resume' element={<Resume />}/>
         <Route path='/certificates' element={<Certificates />}/>
+        <Route path='/certificates-view' element={<CertificateView />}/>
         <Route path='/projects' element={<Projects />}/>
         <Route path='/about' element={<About />}/>
       </Routes>

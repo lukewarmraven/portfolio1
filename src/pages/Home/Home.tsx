@@ -49,11 +49,12 @@ function Home() {
                 {/* duplicate once for seamless loop */}
                 {[
                   "js.png",
+                  "typescript.png",
                   "python.png",
-                  "react.svg",
+                  "physics.png",
                   "supabase.png",
                   "s3.png",
-                  "cloudfront.png",
+                  "cloudFront.png",
                   "lambda.png",
                   "github.png",
                 ].map((icon, i) => (

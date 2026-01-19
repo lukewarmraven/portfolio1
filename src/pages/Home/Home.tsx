@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 import "./Home.css"
 
 function Home() {
@@ -28,16 +28,6 @@ function Home() {
           <div className="text-bold left-body">Technical Skills and Expertise
             
             <div className="home-icon-con">
-              {/* <img className="home-icon" src="src/assets/js.png" alt="js"/>
-              <img className="home-icon" src="src/assets/typescript.png" alt="ts"/>
-              <img className="home-icon" src="src/assets/python.png" alt="python" />
-              <img className="home-icon" src="src/assets/react.svg" alt="react" />
-              <img className="home-icon" src="src/assets/supabase.png" alt="supabase" />
-              <img className="home-icon" src="src/assets/s3.png" alt="s3" />
-              <img className="home-icon" src="src/assets/cloudfront.png" alt="cf" />
-              <img className="home-icon" src="src/assets/lambda.png" alt="lambda" />
-              <img className="home-icon" src="src/assets/github.png" alt="github-light" /> */}
-
               <div className="icon-track">
                 {[
                   "js.png",
@@ -84,18 +74,34 @@ function Home() {
         </div>
 
         <div className='right-card'>
-          <div onClick={()=>nav("/resume")} className="right-strip top-strip">
+          <div onClick={()=>nav("/resume",{
+            state: {
+              title: "resume"
+            }
+          })} className="right-strip top-strip">
             <div>
                 Resume
               </div>
           </div>
-          <div onClick={()=>nav("/certificates")} className="right-strip">
+          <div onClick={()=>nav("/certificates",{
+            state: {
+              title: "certificates"
+            }
+          })} className="right-strip">
             <div>Certificates</div>
           </div>
-          <div onClick={()=>nav("/projects")} className="right-strip">
+          <div onClick={()=>nav("/projects",{
+            state: {
+              title: "projects"
+            }
+          })} className="right-strip">
             <div>Projects</div>
           </div>
-          <div onClick={()=>nav("/about")} className="right-strip bottom-strip">
+          <div onClick={()=>nav("/about",{
+            state: {
+              title: "about"
+            }
+          })} className="right-strip bottom-strip">
             <div>About Me</div>
           </div>
         </div>

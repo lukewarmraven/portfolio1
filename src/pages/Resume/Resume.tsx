@@ -3,7 +3,9 @@ import "./Resume.css"
 
 function Resume() {
   return (
-    <div>Resume</div>
+    <div>
+      <div>Resume Page</div>
+    </div>
   )
 }
 

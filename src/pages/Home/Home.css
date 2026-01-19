@@ -80,7 +80,7 @@
 
     font-size: 2vw;
 
-    border: 0.4vw dashed var(--main-red);    
+    border: 0.15vw dashed var(--main-red);    
     border-right: 0px; 
     background: var(--main-white);
     cursor: pointer;

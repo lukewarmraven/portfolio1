@@ -1,0 +1,19 @@
+.resume-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--main-white);
+    padding: 5vw;
+}
+
+.resume-container iframe{
+    height: 80vw;
+}
+
+.resume-text{
+    width: 75%;
+    padding: 0 0 2vw 0;
+}
+

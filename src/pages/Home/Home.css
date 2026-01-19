@@ -15,13 +15,13 @@
     border-radius: 2em;
 }
 .home-icon{
-    height: 3vw;
+    height: 2vw;
     border-radius: 0.5em;
     /* box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5); */
 }
 .home-icon-con{
     gap: 0.5vw;
-    padding-top: 1vw;
+    padding-top: 0.5vw;
     width: 30%;
     overflow: hidden;
 }
@@ -58,9 +58,11 @@
     font-size: 1.1vw;
     margin: 0 0 1em 0;
     text-align: justify;
+    line-height: 1.2vw;
 }
 .left-bottom{
     margin: 0;
+    line-height: 1.2vw;
 }
 .text-bold{
     font-weight: var(--weight-heavy);
@@ -96,4 +98,14 @@
 
 .right-strip link{
     text-decoration: none;
+}
+.home-raven{
+    width: 4vw;
+    position: relative;
+    top: 5vw;
+    left: 19vw;
+
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
 }

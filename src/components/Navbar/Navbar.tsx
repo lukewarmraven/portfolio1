@@ -1,6 +1,5 @@
 import { useLocation, useNavigate } from "react-router-dom"
 import "./Navbar.css"
-import { useEffect, useState } from "react"
 
 function Navbar() {
   const nav = useNavigate()
@@ -15,8 +14,14 @@ function Navbar() {
   return (
     <div className="nav-container">
       <div className="nav-left">
-        <img onClick={()=> nav("/")} className="nav-logo" src="/src/assets/white-crow.png" alt="logo" />
-        <div className="nav-title">{Number.isNaN(title) ? "" : title}</div>
+        {
+          name && (
+            <div>
+              <img onClick={()=> nav("/")} className="nav-logo" src="/src/assets/white-crow.png" alt="logo" />
+              <div className="nav-title">{Number.isNaN(title) ? "" : title}</div>
+            </div>
+          )
+        }
       </div>
     </div>
   )

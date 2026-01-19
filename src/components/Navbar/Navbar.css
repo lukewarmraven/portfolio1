@@ -1,19 +1,16 @@
 .nav-logo{
-    width: 4vw;
+    width: 4vw; /* size of the logo*/
     cursor: pointer;
+    padding: 0 0 0 4vw; /* left padding of the logo*/
 }
-.nav-left{
-    padding: 0 3vw;
+.nav-left div{
+    display: flex;
+    align-items: center;
 }
 .nav-title{
     font-family: var(--font-cursive);
     color: var(--main-white);
     font-size: 3vw;
 
-    margin: 0 1vw;
-}
-.nav-left{
-    display: flex;
-    align-items: center;
-    
+    margin: 0 1vw; /* left padding of the title*/
 }

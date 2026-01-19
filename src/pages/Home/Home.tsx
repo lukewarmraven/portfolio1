@@ -8,6 +8,9 @@ function Home() {
       {/* <div>Home Page</div> */}
       <div className='parent-card'>
         <div className='left-card'>
+          <div>
+            <img onClick={()=>nav("/")} className="home-raven" src="/src/assets/crow.png" alt="logo" />
+          </div>
           <div className="left-welcome">Welcome!</div>
           <div className="left-body">
             I am <span className="text-bold">

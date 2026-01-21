@@ -14,3 +14,7 @@
 
     margin: 0 1vw; /* left padding of the title*/
 }
+.nav-container{
+    position: sticky;
+    top: 1vh;
+}

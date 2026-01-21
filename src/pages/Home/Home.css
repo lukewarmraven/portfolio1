@@ -99,6 +99,10 @@
 .right-strip link{
     text-decoration: none;
 }
+.right-strip:hover{
+    font-weight: 800;
+    transition: ease-in-out 0.5s;
+}
 .home-raven{
     width: 4vw;
     position: relative;

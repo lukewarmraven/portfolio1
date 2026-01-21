@@ -30,20 +30,29 @@ function Certificates() {
                     thumb: v.thumb,
                     images: v.images
                   }
-                })} className="cert-card-inner" key={i}>
-                  <img className="cert-card-img" src={`/src/assets/cert/${v.thumb}`} />
-                  <div className="cert-card-text cert-card-title">{v.title}</div>
-                  <div className="cert-card-text cert-card-org">{v.org}</div>
-                  <div className={`cert-card-text cert-desc ${expanded ? "expanded" : ""}`}>{v.desc}</div>
-                  <button
-                  className="read-more"
-                  onClick={(e) => {
-                    e.stopPropagation(); // prevents card click
-                    toggleExpand(i);
-                  }}
-                >
-                  {expanded ? "Read less" : "Read more..."}
-                </button>
+                })} className="cert-card-inner-con" key={i}>
+                  <div className="cert-card-inner">
+                      <img className="cert-card-img" src={`/src/assets/cert/${v.thumb}`} />
+                      <div className="cert-card-text cert-card-title">{v.title}</div>
+                      <div className="cert-card-text cert-card-org">{v.org}</div>
+                      <div className={`cert-card-text cert-desc ${expanded ? "expanded" : ""}`}>{v.desc}</div>
+                      <button
+                      className="read-more"
+                      onClick={(e) => {
+                        e.stopPropagation(); // prevents card click
+                        nav("/certificates-view",{
+                        state: {
+                          title: v.title,
+                          desc: v.desc,
+                          org: v.org,
+                          thumb: v.thumb,
+                          images: v.images
+                        }})
+                      }}
+                    >
+                      {expanded ? "Read less" : "Read more..."}
+                    </button>
+                  </div>
                 </div>
             )})
           }

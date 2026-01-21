@@ -18,6 +18,9 @@
     color: var(--main-white);
     padding: 5vw;
 }
+.cert-card-inner:hover{
+    transform: translateY(-1vw); 
+}
 .cert-text{
     width: 75%;
     padding: 0 0 2vw 0;
@@ -35,6 +38,7 @@
     
     /* margin: 1vw; */
     padding: 2vw;
+    flex-grow: 1;  
 }
 .cert-card-text{
     color: var(--main-red);
@@ -44,10 +48,23 @@
     grid-template-columns: repeat(3,1fr);
     gap: 3vw 8vw;
 }
+.cert-card-inner,
+.cert-card-inner-con {
+    box-sizing: border-box;
+}
+.cert-card-inner-con{
+    background-color: var(--main-darkred);
+    border-radius: 1vw;
+    /* padding: 1vw; */
+
+    display: flex;          /* make inner a flex container */
+    flex-direction: column; /* stack children vertically */
+    height: 100%;           /* stretch to grid cell height */
+}
 .cert-desc {
   display: -webkit-box;
   -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient:vertical;
   overflow: hidden;
 }
 .cert-desc.expanded {

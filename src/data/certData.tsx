@@ -15,5 +15,12 @@ export const certData = [
       thumb: "gcp/gcp-thumb.jpg",
       images: ["gcp/gcp-cert.png"]
     },
+    {
+      title: "GCP Fundamentals: Core Infrastructure Class",
+      org: "Trainocate",
+      desc: "Attended an online webinar by Trainocate featuring learning the core foundational concepts of Google Cloud Platform (GCP) where we explored different concepts such as Cloud Basics, Google Cloud Console, and Kubernetes.",
+      thumb: "gcp/gcp-thumb.jpg",
+      images: ["gcp/gcp-cert.png"]
+    },
 
 ]

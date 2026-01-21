@@ -90,10 +90,10 @@ function Home() {
             </div>
             <div onClick={()=>nav("/certificates",{
               state: {
-                title: "certificates"
+                title: "Seminars & Events"
               }
             })} className="right-strip">
-              <div>Certificates</div>
+              <div>Seminars & Events</div>
             </div>
             <div onClick={()=>nav("/projects",{
               state: {

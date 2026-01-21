@@ -6,9 +6,9 @@ function Navbar() {
   const loc = useLocation()
   const name = loc.state?.title
   const title = name?.replace("/","")[0].toUpperCase() + name?.slice(1) 
-  console.log(name);
-  console.log(title);
-  console.log(isNaN(title));
+  // console.log(name);
+  // console.log(title);
+  // console.log(isNaN(title));
   
 
   return (

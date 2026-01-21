@@ -7,7 +7,7 @@ function CertificateView() {
   const desc = loc.state?.desc
   const thumb = loc.state?.thumb
   const images = loc.state?.images
-  console.log(images);
+  // console.log(images);
   
 
   return (
@@ -15,10 +15,10 @@ function CertificateView() {
       <div className="certview-text certview-title">{title}</div>
       <div className="certview-text">{desc}</div>
       <div>
-        <img className="certview-img" src={`/src/assets/${thumb}`} />
+        <img className="certview-img" src={`/src/assets/cert/${thumb}`} />
         {
           images.map((v:any,i:number) => (
-            <img className="certview-img" key={i} src={`/src/assets/${v}`} />
+            <img className="certview-img" key={i} src={`/src/assets/cert/${v}`} />
           ))
         }
       </div>

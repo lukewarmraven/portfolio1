@@ -1,90 +1,19 @@
 export const certData = [
     {
-      title: "Sample 1",
-      desc: "sample description 1",
-      thumb: "physics.png",
-      images: ["crow.png",
-        "github.png",
-        "python.png"]
-    },
-    {
-      title: "Trainocate GCP Fundamentals",
-      desc: "sample description 2",
+      title: "RIST PUP Research Pitching Competition",
+      org: "Research Institute for Science and Technology PUP",
+      desc: "Participated for a research pitching competition for our RESBAC capstone project.",
       thumb: "cloudfront.png",
       images: ["physics.png",
         "lambda.png",
         "supabase.png"]
     },
     {
-      title: "Sample 2",
-      desc: "sample description 2",
-      thumb: "cloudfront.png",
-      images: ["crow.png",
-        "github.png",
-        "python.png"]
+      title: "GCP Fundamentals: Core Infrastructure Class",
+      org: "Trainocate",
+      desc: "Attended an online webinar by Trainocate featuring learning the core foundational concepts of Google Cloud Platform (GCP) where we explored different concepts such as Cloud Basics, Google Cloud Console, and Kubernetes.",
+      thumb: "gcp/gcp-thumb.jpg",
+      images: ["gcp/gcp-cert.png"]
     },
-    {
-      title: "Sample 2",
-      desc: "sample description 2",
-      thumb: "cloudfront.png",
-      images: ["crow.png",
-        "github.png",
-        "python.png"]
-    },
-    {
-      title: "Sample 2",
-      desc: "sample description 2",
-      thumb: "cloudfront.png",
-      images: ["crow.png",
-        "github.png",
-        "python.png"]
-    },
-    {
-      title: "Sample 2",
-      desc: "sample description 2",
-      thumb: "cloudfront.png",
-      images: ["crow.png",
-        "github.png",
-        "python.png"]
-    },
-    {
-      title: "Sample 2",
-      desc: "sample description 2",
-      thumb: "cloudfront.png",
-      images: ["crow.png",
-        "github.png",
-        "python.png"]
-    },
-    {
-      title: "Sample 2",
-      desc: "sample description 2",
-      thumb: "cloudfront.png",
-      images: ["crow.png",
-        "github.png",
-        "python.png"]
-    },
-    {
-      title: "Sample 2",
-      desc: "sample description 2",
-      thumb: "cloudfront.png",
-      images: ["crow.png",
-        "github.png",
-        "python.png"]
-    },
-    {
-      title: "Sample 2",
-      desc: "sample description 2",
-      thumb: "cloudfront.png",
-      images: ["crow.png",
-        "github.png",
-        "python.png"]
-    },
-    {
-      title: "Sample 2",
-      desc: "sample description 2",
-      thumb: "cloudfront.png",
-      images: ["crow.png",
-        "github.png",
-        "python.png"]
-    }
+
 ]

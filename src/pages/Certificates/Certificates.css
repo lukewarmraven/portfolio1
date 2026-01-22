@@ -1,4 +1,5 @@
 .cert-text{
+    /* font-size: 1vw; */
     color: var(--main-white);
 }
 .cert-card-img{
@@ -46,7 +47,9 @@
 .cert-card-outer{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 3vw 8vw;
+    gap: 3vw 4vw;
+
+    padding: 1vw 8vw;
 }
 .cert-card-inner,
 .cert-card-inner-con {
@@ -66,6 +69,8 @@
   -webkit-line-clamp: 2;
   -webkit-box-orient:vertical;
   overflow: hidden;
+
+  font-size: 1vw;
 }
 .cert-desc.expanded {
   -webkit-line-clamp: unset;

@@ -7,9 +7,9 @@ function Certificates() {
   const nav = useNavigate()
   const [expand, setExpand] = useState<number | null>(null)
 
-  const toggleExpand = (index: number) => {
-    setExpand(prev => (prev === index ? null : index))
-  }
+  // const toggleExpand = (index: number) => {
+  //   setExpand(prev => (prev === index ? null : index))
+  // }
 
   return (
     <div className="cert-container">

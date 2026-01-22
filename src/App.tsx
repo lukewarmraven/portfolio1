@@ -7,6 +7,7 @@ import About from './pages/About/About'
 import Navbar from './components/Navbar/Navbar'
 import Resume from './pages/Resume/Resume'
 import CertificateView from './pages/Certificates/CertificateView/CertificateView'
+import ProjectsView from './pages/Projects/ProjectsView/ProjectsView'
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
         <Route path='/certificates' element={<Certificates />}/>
         <Route path='/certificates-view' element={<CertificateView />}/>
         <Route path='/projects' element={<Projects />}/>
+        <Route path='/projects-view' element={<ProjectsView />}/>
         <Route path='/about' element={<About />}/>
       </Routes>
     </div>

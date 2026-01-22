@@ -7,9 +7,9 @@ function Projects() {
   const nav = useNavigate()
   const [expand, setExpand] = useState<number | null>(null)
 
-  const toggleExpand = (index: number) => {
-    setExpand(prev => (prev === index ? null : index))
-  }
+  // const toggleExpand = (index: number) => {
+  //   setExpand(prev => (prev === index ? null : index))
+  // }
 
   return (
     <div className="proj-container">
@@ -22,7 +22,7 @@ function Projects() {
               const expanded = expand === i
 
               return(
-                <div onClick={()=>nav("/certificates-view",{
+                <div onClick={()=>nav("/projects-view",{
                   state: {
                     title: v.title,
                     desc: v.desc,
@@ -30,20 +30,29 @@ function Projects() {
                     thumb: v.thumb,
                     images: v.images
                   }
-                })} className="proj-card-inner" key={i}>
-                  <img className="proj-card-img" src={`/src/assets/cert/${v.thumb}`} />
-                  <div className="proj-card-text proj-card-title">{v.title}</div>
-                  <div className="proj-card-text proj-card-org">{v.org}</div>
-                  <div className={`proj-card-text proj-desc ${expanded ? "expanded" : ""}`}>{v.desc}</div>
-                  <button
-                  className="read-more"
-                  onClick={(e) => {
-                    e.stopPropagation(); // prevents card click
-                    toggleExpand(i);
-                  }}
-                >
-                  {expanded ? "Read less" : "Read more..."}
-                </button>
+                })} className="proj-card-inner-con" key={i}>
+                  <div className="proj-card-inner">
+                      <img className="proj-card-img" src={`/src/assets/cert/${v.thumb}`} />
+                      <div className="proj-card-text proj-card-title">{v.title}</div>
+                      <div className="proj-card-text proj-card-org">{v.org}</div>
+                      <div className={`proj-card-text proj-desc ${expanded ? "expanded" : ""}`}>{v.desc}</div>
+                      <button
+                      className="read-more"
+                      onClick={(e) => {
+                        e.stopPropagation(); // prevents card click
+                        nav("/certificates-view",{
+                        state: {
+                          title: v.title,
+                          desc: v.desc,
+                          org: v.org,
+                          thumb: v.thumb,
+                          images: v.images
+                        }})
+                      }}
+                    >
+                      {expanded ? "Read less" : "Read more..."}
+                    </button>
+                  </div>
                 </div>
             )})
           }

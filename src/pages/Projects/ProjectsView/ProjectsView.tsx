@@ -27,10 +27,12 @@ function ProjectsView() {
         {/* <img className="projview-img" src={`/src/assets/cert/${thumb}`} /> */}
         <button onClick={prevImg}>
           <img className="projview-prev" src="/src/assets/play-button.png" />
+          <span>{current +1} / {images.length}</span>
         </button>
         <img className="projview-img" src={`/src/assets/cert/${images[current]}`} />
         <button onClick={nextImg}>
           <img className="projview-next" src="/src/assets/play-button.png" />
+          <span>{current+1 >= images.length ? (current+2) - images.length : current + 2} / {images.length}</span>
         </button>
         {/* {
           images.map((v:any,i:number) => (

@@ -21,7 +21,12 @@
 .certview-img{
     width: 30vw;
 }
-
+.certview-img-con button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .certview-container{
     display: flex;
     flex-direction: column;

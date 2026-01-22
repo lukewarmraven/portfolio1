@@ -43,6 +43,12 @@
 .projview-img-con button img{
     width: 1vw;
 }
+.projview-img-con button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .projview-img-con button {
     background: none;
     border: none;

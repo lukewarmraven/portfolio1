@@ -10,6 +10,7 @@ function CertificateView() {
   const images = [thumb,...(loc.state?.images || [])]
   const [current, setCurrent] = useState(0)
   // console.log(current);
+  // console.log(current - images.length);
 
   const nextImg = () => {
     setCurrent(prev => (prev+1) % images.length)
@@ -27,10 +28,12 @@ function CertificateView() {
         {/* <img className="certview-img" src={`/src/assets/cert/${thumb}`} /> */}
         <button onClick={prevImg}>
           <img className="certview-prev" src="/src/assets/play-button.png" />
+          <span>{current +1} / {images.length}</span>
         </button>
         <img className="certview-img" src={`/src/assets/cert/${images[current]}`} />
         <button onClick={nextImg}>
           <img className="certview-next" src="/src/assets/play-button.png" />
+          <span>{current+1 >= images.length ? (current+2) - images.length : current + 2} / {images.length}</span>
         </button>
         {/* {
           images.map((v:any,i:number) => (

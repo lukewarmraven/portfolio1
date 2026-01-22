@@ -5,11 +5,13 @@ import { useState } from "react"
 function ProjectsView() {
   const loc = useLocation()
   const title = loc.state?.title
+  const role = loc.state?.role
+  const type = loc.state?.type
   const desc = loc.state?.desc
   const thumb = loc.state?.thumb
   const images = [thumb,...(loc.state?.images || [])]
   const [current, setCurrent] = useState(0)
-  // console.log(current);
+  console.log(loc.state);
 
   const nextImg = () => {
     setCurrent(prev => (prev+1) % images.length)
@@ -22,6 +24,7 @@ function ProjectsView() {
   return (
     <div className="projview-container">
       <div className="projview-text projview-title">{title}</div>
+      <div className="projview-text projview-role">{role}</div>
       <div className="projview-text projview-desc">{desc}</div>
       <div className="projview-img-con">
         {/* <img className="projview-img" src={`/src/assets/cert/${thumb}`} /> */}

@@ -10,12 +10,25 @@
     padding-bottom: 2vw;
     white-space: pre-line; /* allows \n new lines in html*/
 }
+.projview-role{
+    font-size: 1vw;
+    width: 70%;
+
+    text-align: center;
+    line-height: 1.5vw;
+
+    padding-bottom: 1vw;
+
+    font-style: italic;
+}
 .projview-desc{
     font-size: 1vw;
     width: 70%;
 
     text-align: justify;
     line-height: 1.5vw;
+
+    white-space: pre-line;
 }
 
 .projview-img{

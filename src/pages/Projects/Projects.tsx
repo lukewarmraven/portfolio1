@@ -6,6 +6,8 @@ import { useState } from "react"
 function Projects() {
   const nav = useNavigate()
   const [expand, setExpand] = useState<number | null>(null)
+  // console.log(projData);
+  
 
   // const toggleExpand = (index: number) => {
   //   setExpand(prev => (prev === index ? null : index))
@@ -25,6 +27,8 @@ function Projects() {
                 <div onClick={()=>nav("/projects-view",{
                   state: {
                     title: v.title,
+                    role:v.role,
+                    type: v.type,
                     desc: v.desc,
                     org: v.org,
                     thumb: v.thumb,
@@ -43,6 +47,8 @@ function Projects() {
                         nav("/certificates-view",{
                         state: {
                           title: v.title,
+                          role: v.role,
+                          type: v.type,
                           desc: v.desc,
                           org: v.org,
                           thumb: v.thumb,

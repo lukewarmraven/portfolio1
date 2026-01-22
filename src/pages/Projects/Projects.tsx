@@ -32,7 +32,8 @@ function Projects() {
                     desc: v.desc,
                     org: v.org,
                     thumb: v.thumb,
-                    images: v.images
+                    images: v.images,
+                    file: v.file
                   }
                 })} className="proj-card-inner-con" key={i}>
                   <div className="proj-card-inner">
@@ -52,7 +53,8 @@ function Projects() {
                           desc: v.desc,
                           org: v.org,
                           thumb: v.thumb,
-                          images: v.images
+                          images: v.images,
+                          file: v.file
                         }})
                       }}
                     >

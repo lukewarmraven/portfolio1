@@ -27,9 +27,9 @@ export const projData = [
       type:"file",
       role:"Data Analyst, Machine Learning",
       desc: "Conducted Market Basket Analysis using the Apriori algorithm on survey data collected through purposive sampling among 2nd-year BSIT students. Performed data cleaning, validation, and visualization to identify commonly paired games for potential marketing game bundles. This is my first step in working with machine learning and data processing. I learned a lot about the machine learning workflow while working on this small project.",
-      thumb: "resbac/resbac.jpg",
-      images: ["resbac/resbac.png",
-      ]
+      thumb: "game/game2.png",
+      images: [],
+      file:"game/game1.pdf"
     },
     {
       title: "Framingham Heart Study Dataset Research",
@@ -37,9 +37,9 @@ export const projData = [
       type:"file",
       role:"Data Analyst, Data Visualization",
       desc: "Led the data preparation, transformation, and standardization to improve data quality and analysis readiness. Developed meaningful data analysis through graphs for effective data visualization and interpretation.",
-      thumb: "resbac/resbac.jpg",
-      images: ["resbac/resbac.png",
-      ]
+      thumb: "framingham/framingham2.png",
+      images: [],
+      file:"framingham/framingham1.pdf"
     },
     {
       title: "Routing Success - Build strategic connections & enhance teamwork Webinar",

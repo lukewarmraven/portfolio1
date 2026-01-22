@@ -88,3 +88,7 @@
     border: solid 1vw var(--main-white);
     border-radius: 1vw;
 }
+
+iframe{
+    width: 50vw;
+}

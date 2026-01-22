@@ -104,7 +104,7 @@ function Home() {
             </div>
             <div onClick={()=>nav("/about",{
               state: {
-                title: "about"
+                title: "About Me"
               }
             })} className="right-strip bottom-strip">
               <div>About Me</div>

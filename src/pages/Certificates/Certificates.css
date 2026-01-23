@@ -46,7 +46,8 @@
 .cert-card-outer{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 3vw 8vw;
+    gap: 3vw 5vw;
+    padding: 0 5vw;
 }
 .cert-card-inner,
 .cert-card-inner-con {

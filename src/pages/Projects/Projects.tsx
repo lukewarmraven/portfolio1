@@ -15,7 +15,7 @@ function Projects() {
 
   return (
     <div className="proj-container">
-      <div className="proj-text">Read about my experiences in seminars, workshops, and competitions below.</div>
+      <div className="proj-text">Read about my different experiences in projects and events below.</div>
 
       <div className="proj-card-container">
         <div className="proj-card-outer">

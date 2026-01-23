@@ -4,8 +4,9 @@ export const certData = [
       org: "Research Institute for Science and Technology PUP",
       desc: "It's a great opportunity and experience to be a part of the team who participated and represented our course in the RIST PUP Research Pitching Competition last November of 2025. It was one of the first milestones that our research group ever had since we started doing this capstone research. It is already an honor to be recognized in the research space, what more it was to participate in competitions about the one thing that you're working hard so much for. This competition became a stepping stone for many great things that I got to experience for this project.",
       thumb: "rist/rist-cert.jpg",
-      images: ["rist/physics.png",
-        "rist/js.png"
+      images: ["rist/rist-3.jpg",
+        "rist/rist-2.jpg",
+        "rist/rist-4.jpg",
       ]
     },
     {

@@ -21,7 +21,10 @@
 }
 
 .certview-img{
-    width: 30vw;
+    width: 40vw;
+    max-height: 30vw;
+    height: auto;
+    object-fit: contain;
 }
 .certview-img-con button{
     display: flex;
@@ -41,8 +44,8 @@
 .certview-img-con{
     padding: 2vw;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
 }
 .certview-prev{
     transform: rotate(180deg);
@@ -74,5 +77,11 @@
 .certview-img{
     padding: 0 1vw;
     border: solid 1vw var(--main-white);
-    border-radius: 1vw;
+    border-radius:  0 0 1vw 1vw;
+}
+.certview-prev-btn{
+    border-radius: 1vw 0 0 1vw;
+}
+.certview-next-btn{
+    border-radius: 0 1vw 1vw 0vw;
 }

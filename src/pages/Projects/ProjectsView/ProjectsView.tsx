@@ -13,6 +13,7 @@ function ProjectsView() {
   const images = [thumb,...(loc.state?.images || [])]
   const [current, setCurrent] = useState(0)
   console.log(loc.state);
+  console.log(current);
 
   const nextImg = () => {
     setCurrent(prev => (prev+1) % images.length)
@@ -29,32 +30,32 @@ function ProjectsView() {
       <div className="projview-text projview-desc">{desc}</div>
       <div className="projview-img-con">
         {/* <img className="projview-img" src={`/src/assets/cert/${thumb}`} /> */}
-      {
-        type === "image" && (
-          <>
-            <button onClick={prevImg}>
-              <img className="projview-prev" src="/src/assets/play-button.png" />
-              <span>{current +1} / {images.length}</span>
-            </button>
-            <img className="projview-img" src={`/src/assets/cert/${images[current]}`} />
-            <button onClick={nextImg}>
-              <img className="projview-next" src="/src/assets/play-button.png" />
-              <span>{current+1 >= images.length ? (current+2) - images.length : current + 2} / {images.length}</span>
-            </button>
-          </>
-        )
-      }
-      {
-        type === "file" && (
-          <>
-            <iframe src={`/src/assets/proj/${file}`} 
-            width="100%"
-            height="600"
-            style={{ border: "none" }}
-            title="Resume PDF"></iframe>
-          </>
-        )
-      }
+        {
+          type === "image" && (
+            <>
+              <button className="projview-prev-btn" onClick={prevImg}>
+                <img className="projview-prev" src="/src/assets/play-button.png" />
+                {/* <span>{current +1} / {images.length}</span> */}
+              </button>
+              <img className="projview-img" src={`/src/assets/proj/${images[current]}`} />
+              <button className="projview-next-btn" onClick={nextImg}>
+                <img className="projview-next" src="/src/assets/play-button.png" />
+                {/* <span>{current+1 >= images.length ? (current+2) - images.length : current + 2} / {images.length}</span> */}
+              </button>
+            </>
+          )
+        }
+        {
+          type === "file" && (
+            <>
+              <iframe src={`/src/assets/proj/${file}`} 
+              width="100%"
+              height="600"
+              style={{ border: "none" }}
+              title="Resume PDF"></iframe>
+            </>
+          )
+        }
         
         {/* {
           images.map((v:any,i:number) => (
@@ -62,6 +63,15 @@ function ProjectsView() {
           ))
         } */}
       </div>
+      {
+        type === "image" && (
+          <>
+            <div>
+              {current + 1} / {images.length}
+            </div>
+          </>
+        )
+      }
     </div>
   )
 }

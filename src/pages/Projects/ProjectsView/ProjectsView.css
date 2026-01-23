@@ -32,7 +32,11 @@
 }
 
 .projview-img{
-    width: 30vw;
+    width: 40vw;
+    max-height: 30vw;
+    height: auto;
+    object-fit: contain;
+
 }
 
 .projview-container{
@@ -47,11 +51,17 @@
 .projview-img-con{
     padding: 2vw;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
 }
 .projview-prev{
     transform: rotate(180deg);
+}
+.projview-prev-btn{
+    border-radius: 1vw 0 0 1vw;
+}
+.projview-next-btn{
+    border-radius: 0 1vw 1vw 0vw;
 }
 .projview-img-con button img{
     width: 1vw;
@@ -86,7 +96,7 @@
 .projview-img{
     padding: 0 1vw;
     border: solid 1vw var(--main-white);
-    border-radius: 1vw;
+    border-radius: 0 0 1vw 1vw;
 }
 
 iframe{

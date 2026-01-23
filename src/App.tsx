@@ -8,6 +8,7 @@ import Navbar from './components/Navbar/Navbar'
 import Resume from './pages/Resume/Resume'
 import CertificateView from './pages/Certificates/CertificateView/CertificateView'
 import ProjectsView from './pages/Projects/ProjectsView/ProjectsView'
+import Footer from './components/Footer/Footer'
 
 function App() {
 
@@ -26,6 +27,8 @@ function App() {
         <Route path='/projects-view' element={<ProjectsView />}/>
         <Route path='/about' element={<About />}/>
       </Routes>
+
+      <Footer/>
     </div>
   )
 }

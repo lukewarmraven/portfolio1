@@ -9,7 +9,8 @@
 }
 
 .resume-container iframe{
-    height: 80vw;
+    height: 50vw;
+    width: 60%;
 }
 
 .resume-text{

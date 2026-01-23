@@ -25,12 +25,20 @@
     padding-top: 0.5vw;
     width: 30%;
     overflow: hidden;
+
+    padding-inline: 1vw;
+    box-sizing: border-box;
 }
 .icon-track {
   display: flex;
   gap: 1vw;
   width: max-content;
   animation: marquee 30s linear infinite;
+}
+.left-img-con{
+    width: 100%;
+  padding-inline: 0 0 0 1vw;   /* 👈 visible space */
+  box-sizing: border-box;
 }
 @keyframes marquee {
   from {
@@ -40,7 +48,6 @@
     transform: translateX(-50%);
   }
 }
-
 .left-card{
     background-color: var(--main-white);
     overflow: hidden;
@@ -57,12 +64,15 @@
 .left-welcome{
     font-family: var(--font-cursive);
     font-size: 7vw;
+    position: relative;
+    top: 1vw;
 }
 .left-body{
-    font-size: 1.1vw;
+    font-size: 1vw;
     margin: 0 0 1em 0;
     text-align: justify;
     line-height: 1.2vw;
+    
 }
 .left-bottom{
     margin: 0;
@@ -139,11 +149,19 @@
 }
 .home-raven{
     width: 4vw;
-    position: relative;
-    top: 5vw;
-    left: 19vw;
-
     margin: 0;
     padding: 0;
     cursor: pointer;
+
+}
+.home-raven-wrapper {
+    /* position: relative;
+    width: fit-content;
+    cursor: pointer; */
+
+    position: relative;
+    top: 6vw;
+    left: 19vw;
+    cursor: pointer;
+    z-index: 10;
 }

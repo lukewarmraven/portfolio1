@@ -3,22 +3,32 @@
     align-items: center;
     justify-content: center;
 
-    padding: 2vw 0;
+    padding: 1vw 0;
     transform: rotate(-5deg);
 
     width: 80%;
+
+    margin: 0 auto;
 }
 .about-wrapper{
     display: flex;
     flex-direction: column;
+    
 }
 .about-card-under{
     height: 4vw;
     width: 50vw;
     background-color: var(--main-darkred);
+    z-index: 3;
+
+    border-radius: 0 0 1vw 1vw;
+    position: relative;
+    top: -1vw;
 }
 .about-card{
     background-color: var(--main-white);
+    border-radius: 1vw;
+    z-index: 4;
 
     height: 30vw;
     width: 50vw;
@@ -26,6 +36,9 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
+}
+.about-card:hover{
+    transform: translateY(1vw);
 }
 .about-card-img{
     display: flex;
@@ -46,6 +59,8 @@
 .about-card-hello{
     font-family: var(--font-cursive);
     font-size: 8vw;
+    position: relative;
+    top: 2vw;
 }
 .about-card-sub{
     font-size: 0.8vw;
@@ -53,9 +68,66 @@
 }
 .about-card-body{
     width: 25vw;
+    text-align: justify;
+
+    position: relative;
+    top: -3vw;
 }
 .about-sub-con{
     display: flex;
     align-items: center;
+    justify-content: flex-start;
+    padding: 0 2vw;
+
+    font-size: 0.8vw;
+    padding-top: 1vw ;
+}
+.about-sub-group{
+    width: 100%;
+}
+
+.home-icon{
+    height: 2vw;
+    border-radius: 0.5em;
+    /* box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5); */
+}
+.home-icon-con{
+    gap: 0.5vw;
+    padding-top: 0.5vw;
+    width: 100%;
+    overflow: hidden;
+}
+.icon-track {
+  display: flex;
+  gap: 1vw;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+.about-contacts-con div{
+    display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
+    padding: 0.5vw 0;
+}
+.about-contacts-icon{
+    width: 1vw;
+    margin: 0 0.5vw;
+}
+.about-raven{
+    width: 4vw;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+.about-raven-wrapper {
+    /* position: relative;
+    width: fit-content;
+    cursor: pointer; */
+
+    position: relative;
+    top: 8vw;
+    left: 17vw;
+    cursor: pointer;
+    z-index: 10;
 }

@@ -1,0 +1,27 @@
+.footer-con{
+    margin: 1vw;
+    color: var(--main-white);
+    font-size: 1vw;
+
+    padding-top: 2vw;
+
+    z-index: 9999;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 0.5vw;
+}
+
+.footer-img{
+    width: 2vw;
+    
+    /* border: solid 2px black; */
+}

@@ -1,7 +1,9 @@
 import { useNavigate } from "react-router-dom"
 import "./Home.css"
+import { useState } from "react"
 
 function Home() {
+  const [hover,setHover] = useState(false)
   const nav = useNavigate()
   return (
     <div className="home-container">
@@ -9,8 +11,15 @@ function Home() {
       <div className="parent-wrapper">
         <div className='parent-card'>
           <div className='left-card'>
-            <div>
-              <img onClick={()=>nav("/")} className="home-raven" src="/src/assets/crow.png" alt="logo" />
+            <div
+            onMouseEnter={()=>setHover(true)}
+            onMouseLeave={()=>setHover(false)}
+            className="home-raven-wrapper">
+                <img
+                onClick={()=>nav("/")} 
+                className="home-raven" 
+                src={hover ? "/src/assets/crow-hover.png" : "/src/assets/crow.png"}
+                alt="logo" />
             </div>
             <div className="left-welcome">Welcome!</div>
             <div className="left-body">
@@ -29,7 +38,7 @@ function Home() {
               University of the Philippines-Sta. Mesa, Manila.
               </span>
             </div>
-            <div className="text-bold left-body">Technical Skills and Expertise
+            <div className="text-bold left-body left-img-con">Technical Skills and Expertise
               
               <div className="home-icon-con">
                 <div className="icon-track">

@@ -1,7 +1,78 @@
 .certview-text{
     color: var(--main-white);
 }
+.certview-title{
+    font-weight: 800;
+    font-size: 5vw;
+    text-align: center;
+    line-height: 4vw;
+
+    padding-bottom: 2vw;
+    white-space: pre-line; /* allows \n new lines in html*/
+}
+.certview-desc{
+    font-size: 1vw;
+    width: 70%;
+
+    text-align: justify;
+    line-height: 1.5vw;
+
+    white-space: pre-line;
+}
 
 .certview-img{
-    width: 20vw;
+    width: 30vw;
+}
+.certview-img-con button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.certview-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--main-white);
+    padding: 5vw 10vw;
+}
+.certview-img-con{
+    padding: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.certview-prev{
+    transform: rotate(180deg);
+}
+.certview-img-con button img{
+    width: 1vw;
+}
+.certview-img-con button {
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    padding: 1vw;
+    height: 5vw;
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    transition: 
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+.certview-img-con button:hover{
+    background: var(--main-white);
+    
+}
+.certview-img{
+    padding: 0 1vw;
+    border: solid 1vw var(--main-white);
+    border-radius: 1vw;
 }

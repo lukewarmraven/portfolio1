@@ -22,4 +22,6 @@
 .nav-container{
     position: sticky;
     top: 1vh;
+
+    z-index: 9999;
 }

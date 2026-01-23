@@ -1,0 +1,94 @@
+.projview-text{
+    color: var(--main-white);
+}
+.projview-title{
+    font-weight: 800;
+    font-size: 5vw;
+    text-align: center;
+    line-height: 4vw;
+
+    padding-bottom: 2vw;
+    white-space: pre-line; /* allows \n new lines in html*/
+}
+.projview-role{
+    font-size: 1vw;
+    width: 70%;
+
+    text-align: center;
+    line-height: 1.5vw;
+
+    padding-bottom: 1vw;
+
+    font-style: italic;
+}
+.projview-desc{
+    font-size: 1vw;
+    width: 70%;
+
+    text-align: justify;
+    line-height: 1.5vw;
+
+    white-space: pre-line;
+}
+
+.projview-img{
+    width: 30vw;
+}
+
+.projview-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--main-white);
+    padding: 5vw 10vw;
+}
+.projview-img-con{
+    padding: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.projview-prev{
+    transform: rotate(180deg);
+}
+.projview-img-con button img{
+    width: 1vw;
+}
+.projview-img-con button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.projview-img-con button {
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    padding: 1vw;
+    height: 5vw;
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    transition: 
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+.projview-img-con button:hover{
+    background: var(--main-white);
+    
+}
+.projview-img{
+    padding: 0 1vw;
+    border: solid 1vw var(--main-white);
+    border-radius: 1vw;
+}
+
+iframe{
+    width: 50vw;
+}

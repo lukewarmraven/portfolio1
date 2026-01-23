@@ -15,4 +15,5 @@ html,body{
     background-color: var(--main-red);
     color: var(--main-red);
     box-sizing: border-box;
+    font-size: 1.2vw;
 }

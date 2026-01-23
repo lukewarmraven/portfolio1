@@ -17,11 +17,13 @@ function About() {
             onMouseEnter={()=>setHover(true)}
             onMouseLeave={()=>setHover(false)}
             className="about-raven-wrapper">
-                <img
-                onClick={()=>nav("/")} 
-                className="about-raven" 
-                src={hover ? "/src/assets/crow-hover.png" : "/src/assets/crow.png"}
-                alt="logo" />
+              <div className={hover ? "about-hireme show" : "about-hireme hide"}>HIRE ME!</div>
+                <a href="/src/assets/QUINTO-hireMe.png" download>
+                  <img
+                  className="about-raven" 
+                  src={hover ? "/src/assets/crow-hover.png" : "/src/assets/crow.png"}
+                  alt="logo" />
+                </a>
                 
             </div>
             <div className="about-card-hello about-card-text">Hello!</div>

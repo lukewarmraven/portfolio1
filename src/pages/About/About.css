@@ -71,7 +71,7 @@
     text-align: justify;
 
     position: relative;
-    top: -3vw;
+    top: -4vw;
 }
 .about-sub-con{
     display: flex;
@@ -130,4 +130,16 @@
     left: 17vw;
     cursor: pointer;
     z-index: 10;
+}
+.about-hireme{
+    position: relative;
+    top: 1vw;
+    left: 4vw;
+    cursor: pointer;
+}
+.show{
+    opacity: 1;
+}
+.hide{
+    opacity: 0;
 }

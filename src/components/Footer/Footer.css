@@ -1,9 +1,9 @@
 .footer-con{
-    margin: 1vw;
+    /* margin: 1vw;
+    padding-top: 2vw; */
     color: var(--main-white);
     font-size: 1vw;
 
-    padding-top: 2vw;
 
     z-index: 9999;
 
@@ -19,7 +19,9 @@
 
     gap: 0.5vw;
 }
-
+.footer-wrapper{
+    margin: 3vw 0;
+}
 .footer-img{
     width: 2vw;
     

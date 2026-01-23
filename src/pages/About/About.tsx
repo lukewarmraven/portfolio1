@@ -9,7 +9,7 @@ function About() {
       <div className="about-wrapper">
           <div className="about-card">
           <div className="about-card-img">
-            <img src="/src/assets/about/me.jpg" className="about-myimg" />
+            <img src="/assets/about/me.jpg" className="about-myimg" />
           </div>
 
           <div className="about-card-body">
@@ -18,10 +18,10 @@ function About() {
             onMouseLeave={()=>setHover(false)}
             className="about-raven-wrapper">
               <div className={hover ? "about-hireme show" : "about-hireme hide"}>HIRE ME!</div>
-                <a href="/src/assets/QUINTO-hireMe.png" download>
+                <a href="/assets/QUINTO-hireMe.png" download>
                   <img
                   className="about-raven" 
-                  src={hover ? "/src/assets/crow-hover.png" : "/src/assets/crow.png"}
+                  src={hover ? "/assets/crow-hover.png" : "/assets/crow.png"}
                   alt="logo" />
                 </a>
                 
@@ -63,7 +63,7 @@ function About() {
                       "lambda.png",
                       "github.png",
                     ].map((icon, i) => (
-                      <img key={i} src={`src/assets/${icon}`} className="home-icon" />
+                      <img key={i} src={`/assets/${icon}`} className="home-icon" />
                     ))}
 
                     {/* duplicate once for seamless loop */}
@@ -78,7 +78,7 @@ function About() {
                       "lambda.png",
                       "github.png",
                     ].map((icon, i) => (
-                      <img key={`dup-${i}`} src={`src/assets/${icon}`} className="home-icon" />
+                      <img key={`dup-${i}`} src={`/assets/${icon}`} className="home-icon" />
                     ))}
                   </div>
                 </div>
@@ -87,9 +87,9 @@ function About() {
             </div>
             <div className="about-contacts-con">
                 <div>
-                  <img className="about-contacts-icon" src="/src/assets/phone-call.png" alt="" />
+                  <img className="about-contacts-icon" src="/assets/phone-call.png" alt="" />
                   <div className="about-card-sub">09684319082</div>
-                  <img className="about-contacts-icon" src="/src/assets/arroba.png" alt="" />
+                  <img className="about-contacts-icon" src="/assets/arroba.png" alt="" />
                   <div className="about-card-sub">quintoravenluke@gmail.com</div>
                 </div>
             </div>

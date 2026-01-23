@@ -25,19 +25,19 @@ function CertificateView() {
       <div className="certview-text certview-title">{title}</div>
       <div className="certview-text certview-desc">{desc}</div>
       <div className="certview-img-con">
-        {/* <img className="certview-img" src={`/src/assets/cert/${thumb}`} /> */}
+        {/* <img className="certview-img" src={`/assets/cert/${thumb}`} /> */}
         <button className="certview-prev-btn" onClick={prevImg}>
-          <img className="certview-prev" src="/src/assets/play-button.png" />
+          <img className="certview-prev" src="/assets/play-button.png" />
           {/* <span>{current+1 <= 1 ? images.length : current} / {images.length}</span> */}
         </button>
-        <img className="certview-img" src={`/src/assets/cert/${images[current]}`} />
+        <img className="certview-img" src={`/assets/cert/${images[current]}`} />
         <button className="certview-next-btn" onClick={nextImg}>
-          <img className="certview-next" src="/src/assets/play-button.png" />
+          <img className="certview-next" src="/assets/play-button.png" />
           {/* <span>{current+1 >= images.length ? (current+2) - images.length : current + 2} / {images.length}</span> */}
         </button>
         {/* {
           images.map((v:any,i:number) => (
-            <img className="certview-img" key={i} src={`/src/assets/cert/${v}`} />
+            <img className="certview-img" key={i} src={`/assets/cert/${v}`} />
           ))
         } */}
       </div>

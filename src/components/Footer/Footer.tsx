@@ -12,17 +12,17 @@ function Footer() {
                     <div className="footer-icons">
                         <div>
                             <a href="https://www.linkedin.com/in/quintoravenluke/" target="_blank" rel="noopener noreferrer">
-                                <img className="footer-img" src="/src/assets/linkedin.png" />
+                                <img className="footer-img" src="/assets/linkedin.png" />
                             </a>
                         </div>
                         <div>
                             <a href="https://github.com/lukewarmraven/" target="_blank" rel="noopener noreferrer">
-                                <img className="footer-img" src="/src/assets/github.png" />
+                                <img className="footer-img" src="/assets/github.png" />
                             </a>
                         </div>
                         <div>
                             <a href="https://www.facebook.com/ravenluke.quinto" target="_blank" rel="noopener noreferrer">
-                                <img className="footer-img" src="/src/assets/fb.png" />
+                                <img className="footer-img" src="/assets/fb.png" />
                             </a>
                         </div>
                     </div>

@@ -37,7 +37,7 @@ function Projects() {
                   }
                 })} className="proj-card-inner-con" key={i}>
                   <div className="proj-card-inner">
-                      <img className="proj-card-img" src={`/src/assets/proj/${v.thumb}`} />
+                      <img className="proj-card-img" src={`/assets/proj/${v.thumb}`} />
                       <div className="proj-card-text proj-card-title">{v.title}</div>
                       <div className="proj-card-text proj-card-org">{v.org}</div>
                       <div className={`proj-card-text proj-desc ${expanded ? "expanded" : ""}`}>{v.desc}</div>

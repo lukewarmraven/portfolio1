@@ -29,17 +29,17 @@ function ProjectsView() {
       <div className="projview-text projview-role">{role}</div>
       <div className="projview-text projview-desc">{desc}</div>
       <div className="projview-img-con">
-        {/* <img className="projview-img" src={`/src/assets/cert/${thumb}`} /> */}
+        {/* <img className="projview-img" src={`/assets/cert/${thumb}`} /> */}
         {
           type === "image" && (
             <>
               <button className="projview-prev-btn" onClick={prevImg}>
-                <img className="projview-prev" src="/src/assets/play-button.png" />
+                <img className="projview-prev" src="/assets/play-button.png" />
                 {/* <span>{current +1} / {images.length}</span> */}
               </button>
-              <img className="projview-img" src={`/src/assets/proj/${images[current]}`} />
+              <img className="projview-img" src={`/assets/proj/${images[current]}`} />
               <button className="projview-next-btn" onClick={nextImg}>
-                <img className="projview-next" src="/src/assets/play-button.png" />
+                <img className="projview-next" src="/assets/play-button.png" />
                 {/* <span>{current+1 >= images.length ? (current+2) - images.length : current + 2} / {images.length}</span> */}
               </button>
             </>
@@ -48,7 +48,7 @@ function ProjectsView() {
         {
           type === "file" && (
             <>
-              <iframe src={`/src/assets/proj/${file}`} 
+              <iframe src={`/assets/proj/${file}`} 
               width="100%"
               height="600"
               style={{ border: "none" }}
@@ -59,7 +59,7 @@ function ProjectsView() {
         
         {/* {
           images.map((v:any,i:number) => (
-            <img className="projview-img" key={i} src={`/src/assets/cert/${v}`} />
+            <img className="projview-img" key={i} src={`/assets/cert/${v}`} />
           ))
         } */}
       </div>

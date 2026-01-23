@@ -18,7 +18,7 @@ function Home() {
                 <img
                 onClick={()=>nav("/")} 
                 className="home-raven" 
-                src={hover ? "/src/assets/crow-hover.png" : "/src/assets/crow.png"}
+                src={hover ? "/assets/crow-hover.png" : "/assets/crow.png"}
                 alt="logo" />
             </div>
             <div className="left-welcome">Welcome!</div>
@@ -53,7 +53,7 @@ function Home() {
                     "lambda.png",
                     "github.png",
                   ].map((icon, i) => (
-                    <img key={i} src={`src/assets/${icon}`} className="home-icon" />
+                    <img key={i} src={`/assets/${icon}`} className="home-icon" />
                   ))}
 
                   {/* duplicate once for seamless loop */}
@@ -68,7 +68,7 @@ function Home() {
                     "lambda.png",
                     "github.png",
                   ].map((icon, i) => (
-                    <img key={`dup-${i}`} src={`src/assets/${icon}`} className="home-icon" />
+                    <img key={`dup-${i}`} src={`/assets/${icon}`} className="home-icon" />
                   ))}
                 </div>
               </div>

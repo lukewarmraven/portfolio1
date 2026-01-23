@@ -32,7 +32,7 @@ function Certificates() {
                   }
                 })} className="cert-card-inner-con" key={i}>
                   <div className="cert-card-inner">
-                      <img className="cert-card-img" src={`/src/assets/cert/${v.thumb}`} />
+                      <img className="cert-card-img" src={`/assets/cert/${v.thumb}`} />
                       <div className="cert-card-text cert-card-title">{v.title}</div>
                       <div className="cert-card-text cert-card-org">{v.org}</div>
                       <div className={`cert-card-text cert-desc ${expanded ? "expanded" : ""}`}>{v.desc}</div>

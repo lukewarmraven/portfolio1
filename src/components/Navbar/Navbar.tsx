@@ -17,7 +17,7 @@ function Navbar() {
         {
           name && (
             <div>
-              <img onClick={()=> nav("/")} className="nav-logo" src="/src/assets/white-crow.png" alt="logo" />
+              <img onClick={()=> nav("/")} className="nav-logo" src="/assets/white-crow.png" alt="logo" />
               <div className="nav-title">{Number.isNaN(title) ? "" : title}</div>
             </div>
           )
